@@ -10,7 +10,14 @@ import { NotesService } from '../shared/services/notes.service';
 export class NotesComponent implements OnInit {
   notes: Note[] = [];
 
+
   constructor(private notesService : NotesService) {  }
+
+  deleteNote(idToDelete: number){
+    this.notesService.deleteData(idToDelete).subscribe(
+      DeleteNote => this.notes = this.notes.filter(currentNote => currentNote.id != idToDelete)
+    )
+  }
 
   ngOnInit(): void {
     this.notesService.getData().subscribe(resultsNotes => {

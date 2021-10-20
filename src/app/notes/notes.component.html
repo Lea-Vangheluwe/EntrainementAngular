@@ -1,6 +1,6 @@
 <ul>
-  <li  *ngFor="let note of notes">
+  <li  *ngFor="let note of notes, index as index">
     <app-affichage-notes [note]="note"></app-affichage-notes>
-    <app-supprimer-note></app-supprimer-note>
+    <app-supprimer-note [note]="note" (deleteDataEvent)="deleteNote($event)"></app-supprimer-note>
   </li>
 </ul>
