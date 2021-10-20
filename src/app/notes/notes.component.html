@@ -1,3 +1,4 @@
+<app-ajouter-note (addDataEvent)="addNote($event)"></app-ajouter-note>
 <ul>
   <li  *ngFor="let note of notes, index as index">
     <app-affichage-notes [note]="note"></app-affichage-notes>

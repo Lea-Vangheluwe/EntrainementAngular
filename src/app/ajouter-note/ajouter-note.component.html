@@ -1,1 +1,20 @@
-<p>ajouter-note works!</p>
+<button class="btn btn-primary" (click)="open(content)">Ajouter une nouvelle note</button>
+
+<!-- MODAL -->
+<ng-template #content let-c="close" let-d="dismiss">
+  <form [formGroup]="ajoutNoteForm" (ngSubmit)="addData()">
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Ajouter une note</h4>
+    <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <input type="text" formControlName="content" placeholder="{{placeHolder}}">
+  </div>
+  <div class="modal-footer">
+    <button type="submit" class="btn btn-outline-dark" (click)="c()" >Save</button>
+  </div>
+  </form>
+</ng-template>
+
