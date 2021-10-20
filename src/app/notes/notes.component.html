@@ -1,1 +1,5 @@
-<p>notes works!</p>
+<ul>
+  <li  *ngFor="let note of notes">
+    <app-affichage-notes [note]="note"></app-affichage-notes>
+  </li>
+</ul>

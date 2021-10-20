@@ -9,7 +9,9 @@ import { AjouterNoteComponent } from './ajouter-note/ajouter-note.component';
 import { ModifierNoteComponent } from './modifier-note/modifier-note.component';
 import { SupprimerNoteComponent } from './supprimer-note/supprimer-note.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { HomeComponent } from './home/home.component';
+import { AccueilComponent } from './accueil/accueil.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {HttpClientModule } from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -19,12 +21,15 @@ import { HomeComponent } from './home/home.component';
     AjouterNoteComponent,
     ModifierNoteComponent,
     SupprimerNoteComponent,
-    HomeComponent
+    AccueilComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    FormsModule,
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

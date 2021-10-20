@@ -1,19 +1,46 @@
 {
-  "posts": [
+  "notes": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "id": 1634714092767,
+      "content": "Thanks for all the fish"
+    },
+    {
+      "id": 1634714114115,
+      "content": "And my axe !"
+    },
+    {
+      "id": 1634724965715,
+      "content": "zqdqd"
+    },
+    {
+      "id": 1634724976531,
+      "content": "test"
+    },
+    {
+      "id": 1634724983558,
+      "content": "qzdzd"
+    },
+    {
+      "id": 1634725070816,
+      "content": "fefefefe"
+    },
+    {
+      "id": 1634725099945,
+      "content": "qdzqdz"
     }
   ],
-  "comments": [
+  "categories": [
     {
       "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "label": "To Do"
+    },
+    {
+      "id": 2,
+      "label": "In progress"
+    },
+    {
+      "id": 3,
+      "label": "Done"
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }
