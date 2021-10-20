@@ -8,6 +8,8 @@ import { AffichageNotesComponent } from './affichage-notes/affichage-notes.compo
 import { AjouterNoteComponent } from './ajouter-note/ajouter-note.component';
 import { ModifierNoteComponent } from './modifier-note/modifier-note.component';
 import { SupprimerNoteComponent } from './supprimer-note/supprimer-note.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -16,11 +18,13 @@ import { SupprimerNoteComponent } from './supprimer-note/supprimer-note.componen
     AffichageNotesComponent,
     AjouterNoteComponent,
     ModifierNoteComponent,
-    SupprimerNoteComponent
+    SupprimerNoteComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
